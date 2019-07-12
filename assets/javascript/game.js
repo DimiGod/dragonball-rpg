@@ -2,12 +2,12 @@
 $(document).ready(function() {
 
     //audio clips
-    let audio = new Audio('assets/audio/imperial_march.mp3');
-    let force = new Audio('assets/audio/force.mp3');
-    let blaster = new Audio('assets/audio/blaster-firing.mp3');
-    let jediKnow = new Audio('assets/audio/jedi-know.mp3');
-    let lightsaber = new Audio('assets/audio/light-saber-on.mp3');
-    let rtwoo = new Audio('assets/audio/R2D2.mp3');
+    let audio = new Audio('assets/audio/');
+    let force = new Audio('assets/audio/');
+    let blaster = new Audio('assets/audio/');
+    let jediKnow = new Audio('assets/audio/');
+    let lightsaber = new Audio('assets/audio/');
+    let rtwoo = new Audio('assets/audio/);
     
     //Array of Playable Characters
     let characters = {
