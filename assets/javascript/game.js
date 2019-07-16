@@ -1,6 +1,14 @@
 //Global variables
 $(document).ready(function() {
 
+  //audio clips
+let audio = new Audio('assets/audio/noMercy.mp3');
+let force = new Audio('assets/audio/allWeak.mp3');
+let blaster = new Audio('assets/audio/beam.mp3');
+let jediKnow = new Audio('assets/audio/frieza.mp3');
+let lightsaber = new Audio('assets/audio/warrior.mp3');
+let rtwoo = new Audio('assets/audio/monster.mp3');
+
   //Array of Playable Characters
     let characters = {
         'frieza': {
