@@ -2,12 +2,12 @@
 $(document).ready(function() {
 
   //audio clips
-let audio = new Audio('assets/audio/noMercy.mp3');
-let force = new Audio('assets/audio/allWeak.mp3');
-let blaster = new Audio('assets/audio/beam.mp3');
-let jediKnow = new Audio('assets/audio/frieza.mp3');
-let lightsaber = new Audio('assets/audio/warrior.mp3');
-let rtwoo = new Audio('assets/audio/monster.mp3');
+let noMercy = new Audio('assets/audio/noMercy.mp3');
+let allWeak = new Audio('assets/audio/allWeak.mp3');
+let beam = new Audio('assets/audio/beam.mp3');
+let frieza = new Audio('assets/audio/frieza.mp3');
+let warrior = new Audio('assets/audio/warrior.mp3');
+let monster = new Audio('assets/audio/monster.mp3');
 
   //Array of Playable Characters
     let characters = {
@@ -131,7 +131,7 @@ let rtwoo = new Audio('assets/audio/monster.mp3');
           $('#defender').empty();
           $('#defender').append("Your selected opponent")
           renderOne(charObj, '#defender', 'defender');
-          lightsaber.play();
+          warrior.play();
         }
         //re-render player character when attacked
         if (areaRender == 'enemyDamage') {
@@ -143,7 +143,7 @@ let rtwoo = new Audio('assets/audio/monster.mp3');
           $('#defender').empty();
           var gameStateMessage = "You have defated " + charObj.name + ", you can choose to fight another enemy.";
           renderMessage(gameStateMessage);
-          blaster.play();
+          beam.play();
         }
       };
       //this is to render all characters for user to choose their computer
@@ -190,7 +190,7 @@ let rtwoo = new Audio('assets/audio/monster.mp3');
             if (currSelectedCharacter.health <= 0) {
               renderMessage("clearMessage");
               restartGame("You have been defeated...GAME OVER!!!");
-              force.play();
+              allWeak.play();
               $("#attack-button").unbind("click");
             }
           } else {
@@ -199,10 +199,10 @@ let rtwoo = new Audio('assets/audio/monster.mp3');
             if (killCount >= 3) {
               renderMessage("clearMessage");
               restartGame("You Won!!!! GAME OVER!!!");
-              jediKnow.play();
-              // The following line will play the imperial march:
+              frieza.play();
+              // Play "no mercy" sound-clip
               setTimeout(function() {
-              audio.play();
+              noMercy.play();
               }, 2000);
     
             }
@@ -211,7 +211,7 @@ let rtwoo = new Audio('assets/audio/monster.mp3');
         } else {
           renderMessage("clearMessage");
           renderMessage("No enemy here.");
-          rtwoo.play();
+          monster.play();
         }
       });
     

@@ -1,9 +1,7 @@
-
-/*---------------------*/
 /* Body and background */
-/*---------------------*/
+
 body {
-    background-color: #C2C3C7;
+    background-image: url(../images/wallpaper2.jpg);
     font-family: 'Montserrat', sans-serif;
   }
   header {
@@ -30,9 +28,7 @@ body {
     font-size: 150%;
   }
   
-  /*---------------------*/
   /* Character rendering */
-  /*---------------------*/
   .character {
     width: 153px;
     margin: 0px 40px 0px 40px;
@@ -57,9 +53,7 @@ body {
     text-align: center;
   }
   
-  /*---------------------*/
   /*      Fighting       */
-  /*---------------------*/
   .attack {
     text-align: center;
   }
@@ -92,9 +86,8 @@ body {
     color: white;
   }
   
-  /*---------------------*/
   /* Available Oponents  */
-  /*---------------------*/
+  
   #available-to-attack-section {
     float: right;
   }
@@ -102,9 +95,7 @@ body {
       height: 100px;
   }
   
-  /*---------------------*/
   /*      Defender       */
-  /*---------------------*/
   
   /*#defender {
     width: 190px;
@@ -121,9 +112,7 @@ body {
     text-align: center;
   }
   
-  /*---------------------*/
   /*   Media Queries     */
-  /*---------------------*/
   @media only screen and (max-device-width: 768px) {
     .character {
       display: block;
